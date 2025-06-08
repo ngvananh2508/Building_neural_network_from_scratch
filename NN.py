@@ -14,7 +14,7 @@ class Neuron:
     def parameters(self):
         return self.w + [self.b]
 
-class Layer():
+class Layer:
     def __init__(self, nin, nout):
         self.neurons = [Neuron(nin) for _ in range(nout)]
     
